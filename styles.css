@@ -1,0 +1,17 @@
+#container {
+    width: 960px;
+    height: 960px;
+    display: flex;
+    border-style: solid;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+}
+
+.box {
+    border-style: solid red;
+}
