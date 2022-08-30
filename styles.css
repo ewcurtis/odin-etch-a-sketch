@@ -3,15 +3,17 @@
     height: 960px;
     display: flex;
     border-style: solid;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
+    
+    
 }
 
 .row {
+    flex: 1 1 auto;
     display: flex;
 }
 
 .box {
-    border-style: solid red;
+    border: solid;
+    flex: 1 1 auto;
 }

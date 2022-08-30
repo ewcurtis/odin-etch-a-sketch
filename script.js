@@ -7,6 +7,7 @@ function setRow(num) {
     for (let i = 0; i < num; i++) {
         const square = document.createElement('span');
         square.setAttribute("class", "box");
+        
         row.appendChild(square);
     }
     container.appendChild(row);
@@ -20,4 +21,4 @@ function setGrid(num) {
     }
 }
 
-setGrid(2);
+setGrid(16);
