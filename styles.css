@@ -1,6 +1,12 @@
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
 #container {
-    width: 960px;
-    height: 960px;
+    width: 500px;
+    height: 500px;
     display: flex;
     border-style: solid;
     flex-direction: column;
@@ -14,6 +20,5 @@
 }
 
 .box {
-    border: solid;
     flex: 1 1 auto;
 }

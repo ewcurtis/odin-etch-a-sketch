@@ -7,7 +7,10 @@ function setRow(num) {
     for (let i = 0; i < num; i++) {
         const square = document.createElement('span');
         square.setAttribute("class", "box");
-        
+        square.addEventListener("mouseover", e => {
+            e.target.style.background = 'black';
+            console.log(e.target);
+        });
         row.appendChild(square);
     }
     container.appendChild(row);
