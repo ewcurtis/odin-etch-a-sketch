@@ -2,6 +2,7 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
+    gap: 16px;
 }
 
 #container {
@@ -21,4 +22,10 @@ body {
 
 .box {
     flex: 1 1 auto;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
 }

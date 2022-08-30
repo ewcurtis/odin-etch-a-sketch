@@ -1,5 +1,7 @@
 const container = document.querySelector("#container");
-
+const reset = document.querySelector("#reset");
+const setSize = document.querySelector("#setSize");
+let num = 16;
 //sets the row on the sketchpad
 function setRow(num) {
     const row = document.createElement("div");
@@ -23,5 +25,19 @@ function setGrid(num) {
         setRow(num);
     }
 }
+//Resets Grid
+function resetGrid() {
+    setGrid(num);
+}
+reset.addEventListener('click', resetGrid);
+setSize.addEventListener('click', () => {
+    let size = prompt("Please enter a number between 2 and 100 to set the grid size.");
+    console.log(parseInt(size) > 100);
+    while (isNaN(parseInt(size)) || parseInt(size) < 2 || parseInt(size) > 100) {
+        size = prompt("Invalid response. Please enter a number between 2 and 100 to set the grid size.");
+    }
 
+    num = parseInt(size);
+    setGrid(num);
+})
 setGrid(16);
