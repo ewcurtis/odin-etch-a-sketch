@@ -10,8 +10,13 @@ function setRow(num) {
         const square = document.createElement('span');
         square.setAttribute("class", "box");
         square.addEventListener("mouseover", e => {
-            e.target.style.background = 'black';
-            console.log(e.target);
+            if (e.target.getAttribute("class") === "box") {
+                e.target.style.background = `rgba(${Math.floor(Math.random()*256)},${Math.floor(Math.random()*256)},${Math.floor(Math.random()*256)})`;
+                e.target.setAttribute("class", "filledBox");
+                
+            } 
+            
+            //console.log(e.target);
         });
         row.appendChild(square);
     }

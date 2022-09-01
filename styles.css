@@ -24,6 +24,10 @@ body {
     flex: 1 1 auto;
 }
 
+.filledBox {
+    flex: 1 1 auto;
+}
+
 .buttons {
     display: flex;
     justify-content: space-between;
